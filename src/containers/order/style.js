@@ -25,11 +25,17 @@ export const H1 = styled.h1`
 export const Orders = styled.div`
   margin-top: 20px;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* gap: 10px; */
+
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 14px;
   width: 342px;
-  height: 70px;
+  height: 119px;
   border: none;
   outline: none;
 
@@ -39,16 +45,19 @@ export const Orders = styled.div`
     font-size: 20px;
     line-height: 28px;
     color: #ffffff;
+    margin-left: 23px;
+    /* margin-top: 12px; */
   }
 
   button {
     background: none;
     border: none;
     cursor: pointer;
-  
+    display: flex;
+    align-self: end;
+    margin-right: 25px;
+    margin-bottom: -14px;
   }
-
- 
 `;
 
 export const Button = styled.button`

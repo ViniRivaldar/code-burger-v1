@@ -41,11 +41,10 @@ function Order() {
           {orders.map((order) => (
             <Orders key={order.id}>
               <p>{order.order}</p> 
+              <p>{order.client}</p>
               <button onClick={() => deleteOrder(order.id)}>
                 <img alt="excluir" src={Trash} />
               </button>
-              <p>{order.client}</p>
-              
             </Orders>
           ))}
         <Button onClick={goBackPages}>Novo Pedido </Button>
